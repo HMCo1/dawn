@@ -46,6 +46,24 @@ git fetch upstream
 git pull upstream main
 ```
 
+## Connecting two repositories
+
+To connect two repositories, you can follow these steps:
+
+1. Add the second repository as a remote to the first repository using the `git remote add` command.
+2. Fetch the changes from the second repository using the `git fetch` command.
+3. Merge the changes from the second repository into the first repository using the `git merge` command.
+
+For example, if you want to connect the repository `HMCo1/development` with another repository, you can use the following commands:
+
+```sh
+git remote add second-repo <URL-of-second-repo>
+git fetch second-repo
+git merge second-repo/main
+```
+
+Replace `<URL-of-second-repo>` with the actual URL of the second repository and `main` with the branch you want to merge.
+
 ## Developer tools
 
 There are a number of really useful tools that the Shopify Themes team uses during development. Dawn is already set up to work with these tools.
